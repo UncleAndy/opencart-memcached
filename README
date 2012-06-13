@@ -1,0 +1,20 @@
+Using Memcache driver
+
+1. Modify Cache.php library for using Memcached server.
+
+2. Parameters for it in Config.php:
+
+  // CACHE
+  define('CACHE_DRIVER', 'memcached');
+  define('MEMCACHE_HOSTNAME', 'localhost');
+  define('MEMCACHE_PORT', '11211');
+  define('MEMCACHE_NAMESPACE', 'opencart_test');
+
+3. If have not connection to Memcached server, used default file cache.
+
+
+// Ask the question:
+http://forum.opencart.com/viewtopic.php?t=28251
+
+// Ukrainian support:
+http://forum.opencart.ua/viewtopic.php?f=5&t=79
