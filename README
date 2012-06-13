@@ -1,3 +1,5 @@
+OpenCart 1.4.x/1.5.x compatible!
+
 Using Memcache driver:
 
 1. Modify Cache.php library for using Memcached server.
