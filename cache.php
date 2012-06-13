@@ -103,7 +103,7 @@ final class Cache {
       public function delete($key) {
         if ((CACHE_DRIVER == 'memcached') && $this->ismemcache)
         {
-        $this->memcache->delete(MEMCACHE_NAMESPACE . $key);
+        $this->memcache->delete(MEMCACHE_NAMESPACE . $key, 0);
         }
         else
         {
