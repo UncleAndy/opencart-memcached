@@ -1,4 +1,4 @@
-Using Memcache driver
+Using Memcache driver:
 
 1. Modify Cache.php library for using Memcached server.
 
