@@ -20,6 +20,7 @@
 
 
 final class Cache {
+
     private $expire;
     private $memcache;
     private $ismemcache = false;
