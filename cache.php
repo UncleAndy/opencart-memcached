@@ -83,7 +83,7 @@ final class Cache {
       public function set($key, $value) {
         if ((CACHE_DRIVER == 'memcached') && $this->ismemcache)
         {
-        $this->memcache->set(MEMCACHE_NAMESPACE . $key, $value, 0, $this->expire);
+        $this->memcache->set(MEMCACHE_NAMESPACE . $key, $value, MEMCACHE_COMPRESSED, $this->expire);
         }
         else
         {
